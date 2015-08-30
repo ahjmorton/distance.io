@@ -1,28 +1,30 @@
 flushdb
 
-zadd times 432043200000000000 universe
-zadd times 31536000 year
-zadd times 86400 day
-zadd times 3600 hour
-zadd times 60 minute
-zadd times 1 second
-zadd times 0.86 hearbeat-cycle-time
-zadd times 0.7 finger-click
-zadd times 0.430 dance-tempo
-zadd times 0.4 baseball-strike-zone
-zadd times 0.3 eye-blink
-zadd times 0.2 recognize-facial-expressions
-zadd times 0.1 ferrari-gear-interval
-zadd times 0.08 hummingbird-wing-flap
-zadd times 0.06 lamborghini-gear-interval
-zadd times 0.005 honeybee-wing-flap
-zadd times 0.004 camera-shutter
-zadd times 0.001 millsecond
-zadd times 0.000036 gps-discrepancy
-zadd times 0.000001 microsecond
-zadd times 0.00000000336 light-meter
-zadd times 0.000000001017 light-foot
-zadd times 0.000000001 nanosecond
-zadd times 0.000000000330 add-integer
-zadd times 0.0000000000012 fastest-transistor
-zadd times 0.000000000001 picosecond
+zadd times 432043200000000000 "the age of the universe" 
+zadd times 31536000 "one year"
+zadd times 86400 "one day"
+zadd times 3600 "one hour"
+zadd times 60 "one minute"
+zadd times 1 "one second"
+zadd times 0.86 "the average human resting heard cycle time"
+zadd times 0.7 "the time for a human to click there fingers"
+zadd times 0.43 "a common dance music tempo"
+zadd times 0.4 "the time for the fastest baseball pitch to reach the strike zone"
+zadd times 0.3 "the time for the human eye to blink"
+zadd times 0.2 "the time for a human to recongize the emotion in a facial expression" 
+zadd times 0.1 "the time interval between gear changes on a Ferrari FXX"
+zadd times 0.08 "the time for a hummingbird to flag its wings" 
+zadd times 0.0667 "the time for a hummingbirds heart to beat"
+zadd times 0.06 "the time interval between gear changes on a Lamborghini Aventador"
+zadd times 0.005 "the time for a honeybee to flap its wings"
+zadd times 0.004 "a standard cameras shutter speed"
+zadd times 0.001 "one millsecond"
+zadd times 0.000038 "the discrepancy in GPS satellite time per day dye to relativity"
+zadd times 0.0000018 "the amount of time subtraced from the earths day as a result fo the 2011 Japanese earthquake"
+zadd times 0.000001 "one microsecond"
+zadd times 0.00000000336 "the time it takes light to travel one meter in a vacuum"
+zadd times 0.000000001017 "the time it takes light to travel one foot in a vaccum" 
+zadd times 0.000000001 "one nanosecond"
+zadd times 0.000000000330 "the time it takes for a CPU to add two integers"
+zadd times 0.0000000000012 "the switching speed of the fastest transistor ever made"
+zadd times 0.000000000001 "one picosecond"
