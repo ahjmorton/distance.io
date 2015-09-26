@@ -10,7 +10,7 @@ module.exports = function (grunt) {
 
         // Watch Config
         watch: {
-            files: ['views/**/*'],
+            files: ['assets/**/*.html'],
             options: {
                 livereload: true
             },
@@ -75,6 +75,13 @@ module.exports = function (grunt) {
                 options: {
                     script: 'app.js'
                 }
+            }
+        },
+
+        nginx: {
+            options: {
+                config: './conf/nginx.conf',
+                prefix: './assets'
             }
         },
 
@@ -225,8 +232,9 @@ module.exports = function (grunt) {
 
     // Register Tasks
     // Workon
-    grunt.registerTask('workon', 'Start working on this project.', [
+    grunt.registerTask('start', 'Start working on this project.', [
         'jshint',
+        'nginx:start',
         'express:dev',
         'open:site',
         'watch'
@@ -235,11 +243,16 @@ module.exports = function (grunt) {
 
     // Restart
     grunt.registerTask('restart', 'Restart the server.', [
+        'nginx:restart',
         'express:dev',
         'watch'
     ]);
     
 
+    // Stop
+    grunt.registerTask('stop', 'Stop the server.', [
+        'nginx:stop'
+    ]);
     // Build
     grunt.registerTask('build', 'Build production ready assets and views.', [
         'clean:dist',
